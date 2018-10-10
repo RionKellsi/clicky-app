@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import artists from "./artists.json"
+import artists from "./artists.json";
 
 
 class App extends Component {
