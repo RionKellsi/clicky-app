@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import artists from "./artists.json"
+
 
 class App extends Component {
   render() {
