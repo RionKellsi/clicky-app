@@ -26,7 +26,7 @@ class App extends Component {
   shuffleArray = array => {
       for (let i = array.length - 1; i > 0; i--){
         let j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]
+        [array[i], array[j]] = [array[j], array[i]];
       }
   }
 
@@ -70,10 +70,10 @@ class App extends Component {
         <Title />
 
         {
-          this.state.artists.map(artist => (
+          this.state.artists.map(artists => (
             <ArtistCard
-              artist={artist.artists}
-              image={artist.image}
+              artist={artists.artist}
+              image={artists.image}
               selectArtist={this.selectArtist}
               curScore={this.state.curScore}
               />
