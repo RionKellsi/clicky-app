@@ -7,6 +7,8 @@ import Title from './components/Title/Title';
 import ArtistCard from './components/ArtistCard/AristCard';
 
 
+const array = artists;
+
 class App extends Component {
 
   state = {
@@ -15,14 +17,11 @@ class App extends Component {
     curScore: 0,
     artists: artists,
     unselectedArtists: artists
-  }
+  };
 
-  componentDidMount (){
-
-  }
 
   //create a function to shuffle the array 
-
+ 
   shuffleArray = array => {
       for (let i = array.length - 1; i > 0; i--){
         let j = Math.floor(Math.random() * (i + 1));
@@ -67,8 +66,10 @@ class App extends Component {
           curScore={this.state.curScore}
           topScore={this.state.topScore}
         />
+
         <Title />
 
+        
         {
           this.state.artists.map(artists => (
             <ArtistCard

@@ -1,12 +1,12 @@
 [
     {
-        "artist": "lil-wayne",
+        "artist": "lilwayne",
         "image": "http://www.brooklynvegan.com/files/2018/06/lilwayne.jpg"
     },{
-        "artist": "nicki-minaj",
+        "artist": "nickiminaj",
         "image": "https://consequenceofsound.files.wordpress.com/2018/08/nicki-minaj-harriet-tubman.png?w=807"
     }, {
-        "artist": "cardi-b",
+        "artist": "cardib",
         "image": "https://www.irishtimes.com/polopoly_fs/1.3381155.1517855043!/image/image.jpg_gen/derivatives/box_620_330/image.jpg"
     }, {
         "artist": "migos",
@@ -15,13 +15,13 @@
         "artist": "drake",
         "image": "http://saintheron.com/wp-content/uploads/2016/03/drake1.jpg"
     }, {
-        "artist": "gucci-mane",
+        "artist": "guccimane",
         "image": "https://peopledotcom.files.wordpress.com/2017/09/gucci-mane-4.jpg?crop=0px%2C50px%2C1500px%2C787px&resize=1200%2C630"
     }, {
         "artist": "beyonce",
         "image": "https://www.grammy.com/sites/com/files/styles/image_landscape_hero/public/beyonce-hero-487073444_copy.jpg?itok=HTsVCEqU"
     }, {
-        "artist": "chris-brown",
+        "artist": "chrisbrown",
         "image": "https://images.complex.com/complex/images/c_limit,w_680/fl_lossy,pg_1,q_auto/lpdcxpfujmz3aik2f6h9/chris-brown"
     }, {
         "arist": "wale",
@@ -30,10 +30,10 @@
         "arist": "rihanna",
         "image": "https://amp.businessinsider.com/images/5b92b91b672e16232e03aa3d-750-1125.jpg"
     }, {
-        "artist": "trey-songz",
+        "artist": "treysongz",
         "image": "https://wallpapersin4k.net/wp-content/uploads/2016/12/Trey-Songz-Wallpapers-5.jpg"
     }, {
-        "arist": "j-cole",
+        "arist": "jcole",
         "image": "http://saintheron.com/wp-content/uploads/2018/04/J.Cole_.jpg"
     }
 ]
