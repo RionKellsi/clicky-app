@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import artists from './artists.json';
-import Wrapper from './components/Wrapper';
-import Navtab from './components/Nav';
-import Title from './components/Title';
-import ArtistCard from './components/ArtistCard';
+import Wrapper from './components/Wrapper/Wrapper';
+import Navtab from './components/Nav/Nav';
+import Title from './components/Title/Title';
+import ArtistCard from './components/ArtistCard/AristCard';
 
 
-class App extends Comment {
+class App extends Component {
 
   state = {
     message: "Click on an image to begin!",
@@ -31,7 +31,7 @@ class App extends Comment {
   }
 
   selectArtist = artists => {
-    const findArtist = this.state.unselectedArtists.find(item => item.artist === artist);
+    const findArtist = this.state.unselectedArtists.find(item => item.artists === artists);
 
     if (findArtist === undefined) {
       //fail to select artist
@@ -61,6 +61,7 @@ class App extends Comment {
   render() {
     return (
       <Wrapper>
+        
         <Navtab 
           message={this.state.message}
           curScore={this.state.curScore}

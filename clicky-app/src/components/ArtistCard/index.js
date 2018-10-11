@@ -1,1 +1,1 @@
-export { default } from "/ArtistCard";
+export { default } from "./ArtistCard"
