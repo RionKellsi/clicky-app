@@ -7,28 +7,53 @@ import Title from './components/Title/Title';
 import ArtistCard from './components/ArtistCard/AristCard';
 
 
-const array = artists;
-
 class App extends Component {
 
   state = {
+    artists,
     message: "Click on an image to begin!",
     topScore: 0,
     curScore: 0,
-    artists: artists,
+    clickedArray: [],
     unselectedArtists: artists
   };
 
 
+
+
+
+
+
+
+  componentDidMount(){
+
+  }
+
   //create a function to shuffle the array 
  
   shuffleArray = array => {
-      for (let i = array.length - 1; i > 0; i--){
-        let j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-  }
 
+  };
+
+      // const arrLength = array.length
+      // const shuffledArray = []
+      
+      // while(array.length) {
+        
+      //   const randomIndex = Math.floor(Math.random() * (i + 1))
+      //   // get random number between 0 and length of array
+      //   // pop item from current array
+      //   // put into 'shufffledArray' using random index (ex: shuffledArray[randomIndex] = popped item)
+      // }
+
+      // // return shuffledArray
+
+      // console.log(array);
+      // return array;
+      
+  
+
+  
   selectArtist = artists => {
     const findArtist = this.state.unselectedArtists.find(item => item.artists === artists);
 
@@ -54,7 +79,10 @@ class App extends Component {
       });
     }
 
-    this.shuffleArray(artists);
+    const shuffledArtist = this.shuffleArray(artists);
+
+    return shuffledArtist;
+    
   };
 
   render() {
@@ -69,9 +97,7 @@ class App extends Component {
 
         <Title />
 
-        
-        {
-          this.state.artists.map(artists => (
+        {this.state.artists.map(artists => (
             <ArtistCard
               artist={artists.artist}
               image={artists.image}
